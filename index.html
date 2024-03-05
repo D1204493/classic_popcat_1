@@ -1,14 +1,30 @@
+<!--設定文件格式為HTML5版本-->
 <!DOCTYPE html>
 
-<html>
+<!--設定內容語系為英文，改為台灣繁體中文-->
+<html lang="zh-Hant-TW">
+
+<!--head 存放網頁的基本資訊，像是title,meta,style-->
 <head>
+
+<!--網頁的標題-->
     <title>POPCAT CLASSIC</title>
+<!--SEO，搜尋引擎最佳化，用lighthouse去看-->
     <meta name="author" content="Joshua O'Sullivan, Freddy Heppell, Edward Hails">
 
+<!--編碼格式為UTF-8-->
     <meta charset="UTF-8">
 
+<!--主題色，但不是每個瀏覽器都支援。ios可以看到-->
     <meta name="msapplication-TileColor" content="#b721ff">
     <meta name="theme-color" content="#b721ff">
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Madimi+One&family=Noto+Sans+TC:wght@100..900&family=Sriracha&display=swap&text=0123456789" rel="stylesheet">
+<!--上一行1.css與css2差別 2.wght@200..900 字的大小 3.swap&text=0123456789 text...可讓網頁速度變快，SEO效率變快-->
+<!--(上去google fonts找自己想要的自型)如果要換自型，要調2個地方:1.上面這三個連結 2.第77行的font-family:(-->
 
     <style>
         html { height:100%; overflow:hidden; }
@@ -58,7 +74,7 @@
             -webkit-text-stroke-color: black;
             font-weight:900;
             font-size:80px;
-            font-family: 'Nunito', sans-serif;
+            font-family: 'Madimi One', sans-serif;
             word-wrap: break-word;
         }
         @media(min-width:1000px) {
