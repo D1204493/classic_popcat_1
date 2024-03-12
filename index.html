@@ -11,9 +11,10 @@
     <title>POPCAT CLASSIC</title>
 <!--SEO，搜尋引擎最佳化，用lighthouse去看-->
     <meta name="author" content="Joshua O'Sullivan, Freddy Heppell, Edward Hails">
+<!--meta，網頁可加分，增加尋找速度-->
 
 <!--編碼格式為UTF-8-->
-    <meta charset="UTF-8">
+    <meta charset="ISO-8859-1">
 
 <!--主題色，但不是每個瀏覽器都支援。ios可以看到-->
     <meta name="msapplication-TileColor" content="#b721ff">
@@ -24,7 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Madimi+One&family=Noto+Sans+TC:wght@100..900&family=Sriracha&display=swap&text=0123456789" rel="stylesheet">
 <!--上一行1.css與css2差別 2.wght@200..900 字的大小 3.swap&text=0123456789 text...可讓網頁速度變快，SEO效率變快-->
-<!--(上去google fonts找自己想要的自型)如果要換自型，要調2個地方:1.上面這三個連結 2.第77行的font-family:(-->
+<!--(上去google fonts找自己想要的自型)如果要換自型，要調2個地方:1.上面這三個連結 2.第77行的font-family:-->
 
     <style>
         html { height:100%; overflow:hidden; }
@@ -92,9 +93,12 @@
 </head>
 
 <body>
+<!--src來源、alt替代文字-->
 <img class="title" src="imgs/popcat.svg" alt="POPCAT">
+<!--element(元素):一整行<> ;tag:<img> ;attribute:class、src、alt ;text:"title"、"imgs..."、"POPCAT"-->
 
-<div class="cat-img" id="p"></div>
+<div class="cat-img" id="p">12345687654</div>
+<!--div:區塊、容器; id為獨一無二的-->
 
 <script>
     /*Preloading alternate cat image*/
@@ -166,5 +170,6 @@
     document.addEventListener("pointerdown", op_func)
     document.addEventListener("keydown", op_func)
 </script>
+
 </body>
 </html>
