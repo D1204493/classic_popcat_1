@@ -120,10 +120,14 @@ let close_popcat = function(){
     cat.id="p";
 }
 
+function asynclose(){
+    setTimeout(close_popcat, 100);
+}
+
 document.addEventListener("keydown", open_popcat);//鍵盤按，數字會增加
 document.addEventListener("pointerdown", open_popcat);//滑鼠按，數字會增加
-document.addEventListener("keyup", close_popcat);
-document.addEventListener("pointerup", close_popcat);
+document.addEventListener("keyup", asynclose);
+document.addEventListener("pointerup", asynclose);
 
 //console.log( 0 == false);
 //console.log( 0 === false); 三個"=">>判斷"型態"，較嚴謹。
